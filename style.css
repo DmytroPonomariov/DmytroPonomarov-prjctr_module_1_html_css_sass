@@ -1,0 +1,12 @@
+body {
+    max-width: 500px;
+    margin: auto;
+}
+
+.blockquote_color {
+    color: #383737;
+}
+
+.p_red {
+    color: #ff0000;
+}

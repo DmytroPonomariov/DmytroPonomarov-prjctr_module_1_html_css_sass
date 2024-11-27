@@ -1,12 +1,50 @@
-body {
-    max-width: 500px;
-    margin: auto;
+body{
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1;
+    letter-spacing: -0.02em;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+    color: #222121;
+    text-align: left;
 }
 
-.blockquote-color {
-    color: #383737;
+.title{
+    font-size: 32px;
+    font-weight: 600;
+    font-style: inherit; 
 }
 
-.p_red {
-    color: #ff0000;
+.link-tbilisi{
+    text-decoration: none;
+    color: #5e5d5d;
 }
+
+a{
+    color: #222121; 
+    text-decoration: underline #2818bd;
+}
+
+blockquote, 
+figure{
+    margin-left: 0;
+}
+
+figure{
+    text-decoration: none
+}
+
+.text-bold{
+    font-weight: 700;
+}
+
+.text-centre{
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+
+}
+

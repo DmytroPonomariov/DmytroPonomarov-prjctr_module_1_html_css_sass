@@ -5,362 +5,354 @@
 }
 
 body{
-    font-family: "Tomorrow", Arial, sans-serif;
-    font-style: normal;
-    font-size: 56px;
+    font-family: "Basis Grotesque Pro", Arial, sans-serif;
     font-weight: 400;
-    line-height: 78.4px;
-    letter-spacing: 0.04em;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
     text-align: left;
-    color: #000;
+    font-style: normal;
 }
 
-.primary-header__menu-link{
-    font-size: 20px;
+
+.text-300{
+    font-weight: 300;
+}
+
+.text-400{
     font-weight: 400;
-    line-height: 26px;
+}
+
+.text-700{
+    font-weight: 700;
+}
+
+.text-uppercase{
+    text-transform: uppercase;
+}
+
+
+.sub-title--blue{
+    color: #0536FC;
+}
+
+.sub-title--black{
     color: #000;
 }
 
-.header{
-    position: fixed;
-    z-index: 3;
-    top: 0;
-    left: 0;
-    background-color: #fff;
-    width: 100%
+.title{
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 42px;
+    color: #000000;
+    text-transform: uppercase;
+    font-family: Basis Grotesque Pro;
+    letter-spacing: -0.03em;
+    text-align: left;
+
 }
 
 .container{
-    max-width: 1290px;
-    padding-inline: 10px;
+    max-width: 1460px;
     width: 100%;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
-.header__container{
-    max-width: 1240px;
-    width: 100%;
-    margin: 0 auto;
+.invest-content-and-block{
+    margin-top: 150px;
+    margin-bottom: 150px;
 }
 
-.header__top{
+.invest-content-and-block__container{
+    max-width: 1150px;
+    width: 100%;
+    margin-left: auto;
+}
+
+.invest-content__sub-title{
+    margin-bottom: 30px;
+}
+
+.invest-content__title-bottom{
+    margin-bottom: 70px;
+    margin-right: 85px;
+}
+
+.invest-block{
     display: flex;
     justify-content: space-between;
-    margin-top: 48px;
-    margin-bottom: 34px;
 }
 
-.header__burger{
-    display: none;
-}
-
-.header__logo-link {
-    display: block;
-    width: 238px;
-    height: 24px;
-}
-
-.header__logo-image{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.header__menu-list{
-    display: flex;
-}
-
-
-.header__menu-item-search{
-    margin-top: 1px;
-}
-
-.header__menu-link-search{
-    display: block;
-    width: 24px;
-    height: 24px;
-}
-
-.header__menu-link-search-image{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;  
-}
-
-.header__menu-item{
-    margin-left: 20px;
-}
-
-.header__menu-link{
-    display: block;
-}
-
-.header__menu-item-cart{
-    margin-left: 10px;
-}
-
-.header__menu-link-cart{
-    width: 24px;
-    height: 24px;
-}
-
-.header__menu-link-cart-image{
-    display: block;
-    width: 100%;
-    height: 100%;
-    object-fit: contain;  
-}
-
-.header__menu-link-cart-mobile{
-    display: none;
-}
-
-.section-sneakers__presentation-background{
-    background: url(./images/section-sneakers__presentation-background.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;.
-}
-
-.section-sneakers__presentation{
+.invest-block__payment{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding-top: 148px; */
+    gap: 48px;
 }
 
-.section-sneakers__presentation-title{
-    text-transform: uppercase;
-}
 
-.section-sneaker__presentation-image{
-    width: 100%;
-    aspect-ratio: 533 / 355;
-}
-
-.article-sneakers__description{
-    margin-top: 158px;
-    margin-bottom: 164px;
+.form__payment-method{
     display: flex;
+    gap: 30px;
+}
+
+.payment-method-options__inner{
+    display: flex;
+    flex-direction: row-reverse;
     align-items: flex-start;
-    gap: 32px;
+    gap: 15px;
 }
 
-.article-sneakers__description-image{
-    width: 100%;
-    aspect-ratio: 288 / 288;
-}
+/* <!-- Пробував зробити касмний радіоботон на базі структури кастомного чексбоксу - в мене не вийшло --> */
 
-.article-sneakers__description-text{
-    font-family: Sintony;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 56px;
-    text-align: left;
-}
 
-.section-new-model__presentation-background{
-    background: url(./images/section-new-model__presentation-background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    width: 100%;
-    padding-top: 214px;
-    padding-bottom: 197px;
-}
+/* .invest-block__payment-method-options{
+    margin-bottom: 48px;
+} */
 
-.section-new-model__presentation{
+/* .radio {
+    position: relative;
     display: flex;
-    justify-content: center
+    align-items: center;
+    gap: 5px;
 }
 
-.section-new-model__presentation-title{
-    text-transform: uppercase;
-}
-
-.article-new-model__description{
-    display: flex;
-    justify-content: space-between;
-    gap: 50px;
-    margin-top: 122px;
-    margin-bottom: 125px; 
-}
-
-
-.article-new-model__description-image{
-    aspect-ratio: 606 / 608;
-    width: 100%;
-}
-
-.article-new-model__description-text-wrapper{
-    max-width: 530px;
-}
-
-.article-new-model__description-title{
-    font-family: Sintony;
-    font-size: 40px;
-    font-weight: 400;
-    line-height: 56px;
-    padding-bottom: 64px;
-}
-
-.article-new-model__description-text{
-    font-family: Sintony;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 38.4px;
-}
-
-.section-sneakers__presentation-mobile{
-    padding-top: 113px;
-    padding-bottom: 52px;
+.radio__input {
     display: none;
 }
 
-.section-sneakers__presentation-title-mobile{
-    text-transform: uppercase;
+.radio__checkmark{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #00000026;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    padding-left: 1px;
+}
+  
+.radio__checkmark::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 7px;
+    border-bottom: 0.7px solid #0536FC;
+    border-left: 0.7px solid #0536FC;
+    transform: rotate(-45deg);
+    opacity: 0;
+    margin-bottom: 3px;
+}
+  
+.radio__input:checked ~ .checkbox__checkmark::before {
+    opacity: 1;
 }
 
-.section-sneakers__presentation-image-mobile{
+.radio__text{
+    margin-left: 15px;
+    margin-right: 8px;
+} */
+
+
+
+.invest-block__payment-method-title{
+    margin-bottom: 30px;
+}
+
+.invest-block__payment-method-amount{
+    margin-bottom: 20px;
+}
+
+
+.invest-block__payment-sign-in{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;}
+
+.form__inner{
+    max-width: 385px;
+}
+
+.form__input{
+    display: block;
     width: 100%;
-    aspect-ratio: 280 / 186;
+    border: 0;
+    margin-top: 20px;
+}
+
+.form__input::placeholder{
+    font-family: "Basis Grotesque Pro", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    font-style: normal;
+    color: #000;
+    opacity: 35%;
+}
+
+.form__input:focus,
+.form__input:active {
+    outline: 2px solid #C4C4C4;
+}
+
+
+.form__img{
+    width: 100%;
+}
+
+.privacy-checkbox{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.checkbox {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.checkbox__input {
+    display: none;
+}
+
+.checkbox__checkmark{
+    display: flex;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #00000026;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1px;
+    padding-left: 1px;
+}
+  
+.checkbox__checkmark::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 7px;
+    border-bottom: 0.7px solid #0536FC;
+    border-left: 0.7px solid #0536FC;
+    transform: rotate(-45deg);
+    opacity: 0;
+    margin-bottom: 3px;
+}
+  
+.checkbox__input:checked ~ .checkbox__checkmark::before {
+    opacity: 1;
+}
+
+.checkbox__text{
+    margin-left: 15px;
+    margin-right: 8px;
+}
+
+.button{
+    width: 213px;
+    height: 55px;
+    padding: 16px 60px;
+    background: #0536FC;
+    color: #FFFFFF;
+    border: 0;
+    font-family: "Basis Grotesque Pro", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    font-style: normal;
+}
+
+.invest-block__payment-method-amount{
+    display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(2, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.invest-block__amount-button-50000{
+    grid-area: 1 / 1 / 2 / 2;
+}
+.invest-block__amount-button-30000{
+    grid-area: 1 / 2 / 2 / 3;
+    
+}
+.invest-block__amount-button-10000{
+    grid-area: 1 / 3 / 2 / 4;
+}
+.invest-block__amount-button-1000 {
+    grid-area: 1 / 4 / 2 / 5;
+}
+.invest-block__form-amount{
+    grid-area: 2 / 1 / 3 / 5;
+}
+
+/* Я не зрозумів як зробити бордери для кнопок і для інпута як на макеті */
+
+.button-amount{
+    width: 160px;
+    height: 50px;
+    padding: 13px 51px;
+    background: transparent;
+    color: #000000;
+    border: 0;
+    font-family: "Basis Grotesque Pro", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    font-style: normal;
+}
+
+.button-amount:active{
+    background: #0536FC;
+    color: #FFFFFF;
+}
+
+.form__inner-amount{
+    max-width: 635px;
+}
+
+.form__input-amount{
+    display: block;
+    width: 100%;
+    border: 0;
+    padding: 13px 0 13px 35px;
+}
+
+.form__input-amount::placeholder{
+    font-family: "Basis Grotesque Pro", Arial, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    text-align: left;
+    font-style: normal;
+    color: #000;
+    opacity: 35%;
+}
+
+.form__input:focus,
+.form__input:active {
+    outline: 2px solid #C4C4C4;
 }
 
 @media (max-width: 1200px){
-    .header__burger{
-        display: block;
-        background: transparent;
-        border: 0;
-        cursor: pointer;
-    }
+    .invest-block{
+        flex-direction: column;
+        gap: 30px;
+    } 
 
-    .header__menu-link-cart-mobile{
-        display: block;
-    }
-
-    .header__menu-list{
-        display: none;
-    }
-
-    .container{
-        max-width: calc(100vw - 20px * 2);
-        padding: 0;
-    }
-
-    body{
-        font-size: 46px;
-        line-height: 60.4px;
-    }
-
-    .article-sneakers__description{
-        margin-top: 70px;
-        margin-bottom: 70px;
-        display: block;
-    }
-
-    .section-new-model__presentation-background{
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
-    .article-new-model__description{
-        display: block;
-        margin-top: 70px;
-        margin-bottom: 70px;
-    }
-
-    .article-new-model__description-text-wrapper{
-        max-width: 1200px;
-    }
-
-    .article-new-model__description-title{
-        padding-top: 10px;
-        padding-bottom: 20px;
-    }
-
-    .article-new-model__description-text{
-        font-size: 24px;
-        line-height: 33.6px;
-    }
-}
-
-
-@media (max-width: 560px){
-    .header__logo-link {
-        width: 140px;
-        height: 14px;  
-    }
-
-    .header__top{
-        gap: 22px;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
-
-    .primary-header__menu-link{
-        font-size: 16px;
-        line-height: 20.8px;
-    }
-
-    .header__logo-link{
-        margin-top: 3px;
-        margin-bottom: 3px;
-    }
-
-    body{
-        font-size: 26px;
-        line-height: 36.4px;
-    }
-
-    .section-sneakers__presentation{
-        padding-top: 113px;
-        padding-bottom: 52px;
-    }
-
-    .section-sneakers__presentation{
-        display: none;
-    }
-
-    .section-sneakers__presentation-mobile{
-        display: block;
-    }
-
-    .article-sneakers__description{
-        margin-top: 50px;
-        margin-bottom: 50px;
-        display: block;
-    }
-
-    .article-sneakers__description-text{
-        font-size: 20px;
-        line-height: 28px;
-    }
-
-    .section-new-model__presentation-background{
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    .article-new-model__description{
-        display: block;
-        margin-top: 50px;
-        margin-bottom: 50px;
-    }
-
-    .article-new-model__description-title{
-        font-size: 24px;
-        font-weight: 700;
-        line-height: 33.6px;
-        padding-top: 10px;
-        padding-bottom: 20px;
-    }
-
-    .article-new-model__description-text{
-        font-size: 20px;
-        line-height: 32px;
-    }
 }

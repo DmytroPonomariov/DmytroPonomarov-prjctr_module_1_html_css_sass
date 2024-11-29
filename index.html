@@ -1,78 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ukraine">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>UNEAK</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sintony&family=Tomorrow&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <title>Програма для змін у країні</title>
+    <link rel="stylesheet" href="fonts/BasisGrotesquePro-font.css">
+    <link rel="stylesheet" href="reset.css" media="all" />
+    <link rel="stylesheet" href="style.css" media="all">
 </head>
 <body>
-    <header class="header">
-        <div class="container">
-            <div class="header__container">
-                <div class="header__top">
-                    <button class="header__burger">
-                        <span class="header__burger-menu primary-header__menu-link">MENU</span>
-                    </button>
-                    <a class="header__logo-link" href="#">
-                        <picture class="header__logo-image-wrapper">
-                            <source class="header__logo-image-slim" srcset="./images/header__logo-image-slim.svg" media="(max-width: 560px)">
-                            <img class="header__logo-image" src="./images/header__logo-image.png" alt="header__logo-image">
-                        </picture>
-                    </a>
-                    <nav class="header__menu">
-                        <ul class="header__menu-list">
-                            <li class="header__menu-item-search"><a class="header__menu-link-search" href="#"><img class="header__menu-link-search-image" src="./images/header__menu-link-search-image.png" alt="header__menu-link-search-image"></a></li>
-                            <li class="header__menu-item"><a class="header__menu-link primary-header__menu-link" href="#">ABOUT</a></li>
-                            <li class="header__menu-item"><a class="header__menu-link primary-header__menu-link" href="#">SHOP</a></li>
-                            <li class="header__menu-item"><a class="header__menu-link primary-header__menu-link" href="#">CART</a></li>
-                            <li class="header__menu-item-cart"><a class="header__menu-link-cart" href="#"><img class="header__menu-link-cart-image" src="./images/header__menu-link-cart-image.svg" alt="header__menu-link-cart-image"></a></li>
-                        </ul>
-                        <a class="header__menu-link-cart-mobile primary-header__menu-link" href="#">CART</a>
-                    </nav>
-                </div>
-            </div>
-        </div> 
-    </header>
     <main class="main">
-            <div class="section-sneakers__presentation-background">
-                <div class="container">
-                    <section class="section-sneakers__presentation">
-                        <h1 class="section-sneakers__presentation-title">Sneakers which will change your next step making it more sustainable, animal friendly, conscious</h1>
-                        <img class="section-sneakers__presentation-image" src="./images/section-sneakers__image.png" alt="section-sneakers__image">
-                    </section>
-                    <section class="section-sneakers__presentation-mobile">
-                        <h1 class="section-sneakers__presentation-title-mobile">Sneakers which will change your next step<img class="section-sneakers__presentation-image-mobile" src="./images/section-sneakers__image.png" alt="section-sneakers__image"> making it more sustainable, animal friendly, conscious</h1>
-                    </section>
-                </div>
-            </div>
-            <div class="container">
-                    <article class="article-sneakers__description">
-                        <img class="article-sneakers__description-image" src="./images/article-sneakers__description-image.png" alt="article-sneakers__description-image">
-                        <h3 class="article-sneakers__description-text">We realize quite well that shoes  are one of the most consumed products  within the industry of fashion,  which means volumes can be important,  which is a big social responsibility.</h3>
-                    </article>
-            </div>
-            <div class="section-new-model__presentation-background">
-                <div class="container">
-                    <section class="section-new-model__presentation">
-                        <h1 class="section-new-model__presentation-title">Juarez is the name of the first sustainable sneaker shoes model from UNEAK,  a new italian sustainable fashion brand, born from  the ideas of Sonia and Davide.</h1>
-                    </section>
-                </div>
-            </div>
-            <div class="container">
-                <article class="article-new-model__description">
-                    <div class="article-new-model__description-image-wrapper">
-                        <img class="article-new-model__description-image" src="./images/article-new-model__description-image.png" alt="article-new-model__description-image">
+        <div class="container">
+            <section class="invest-content-and-block">
+                <div class="invest-content-and-block__container">
+                    <div class="invest-content">
+                        <div class="invest-content__container">
+                            <h1 class="invest-content__sub-title sub-title--blue text-700 text-uppercase">інвестиції</h1>
+                            <h2 class="invest-content__title-top title">зробити</h2>
+                            <h2 class="invest-content__title-bottom title">— інвестиції у програму</h2>
+                        </div>
                     </div>
-                    <div class="article-new-model__description-text-wrapper">
-                        <h3 class="article-new-model__description-title">The Juarez sneaker model features certified sustainable materials  </h3>
-                        <p class="article-new-model__description-text">It’s produced completely in Italy,  in a warm region where all workers live very close to the production site.</p>
+                    <div class="invest-block">
+                        <h3 class="invest-block__title sub-title--black text-700 text-uppercase">виберіть спосіб оплати</h3>
+                        <div class="invest-block__payment">
+                            <div class="invest-block__payment-method-options">
+                                
+                                <form class="form__payment-method" action="" >
+                                    <div class="payment-method-options__inner">
+                                        <label class="payment-method-options" for="card">
+                                            <span class="sub-title--black text-400">Банківська карта</span>
+                                        </label>
+                                        <input type="radio" name="choice" value="Банківська карта" id="card">
+                                    </div>
+                                    <div class="payment-method-options__inner">
+                                        <label class="payment-method-options" for="card">
+                                            <span class="sub-title--black text-400">PayPal</span>
+                                        </label>
+                                        <input type="radio" name="choice" value="PayPal" id="card">
+                                    </div>
+                                    <div class="payment-method-options__inner">
+                                        <label class="payment-method-options" for="card">
+                                            <span class="sub-title--black text-400">Банківська платіжна квитанція</span>
+                                        </label>
+                                        <input type="radio" name="choice" value="Банківська платіжна квитанція" id="card">
+                                    </div>
+                                </form>
+                                <!-- <form class="form__payment-method" action="" >
+                                    <label class="radio" for="card">
+                                        <span class="radio__checkmark"></span>
+                                        <span class="radio__text sub-title--black text-400">Банківська карта</span>
+                                    </label>
+                                    <input class="radio__input" type="radio" name="choice" value="Банківська карта" id="card">
+                                </form> -->
+                                <!-- Пробував зробити касмний радіоботон на базі структури кастомного чексбоксу - в мене не вийшло -->
+                            </div>
+                            <div class="invest-block__payment-method">
+                                <h3 class="invest-block__payment-method-title sub-title--black text-700 text-uppercase">банківська карта</h3> 
+                                <div class="invest-block__payment-method-amount">
+                                    <button class="invest-block__amount-button-50000 button-amount text-400">50 000</button>
+                                    <button class="invest-block__amount-button-30000 button-amount text-400">30 000</button>    
+                                    <button class="invest-block__amount-button-10000 button-amount text-400">10 000</button>    
+                                    <button class="invest-block__amount-button-1000 button-amount text-400">1 000</button>
+                                    <form class="invest-block__form-amount" action="" method="">
+                                        <div class="form__inner-amount">
+                                            <label class="form__title-amount sub-title--black text-700 text-uppercase" for="amount"></label>
+                                            <input class="form__input-amount" type="number" name="number" id="amount" placeholder="Інша сумма">
+                                        </div>
+                                    </form>    
+                                </div>
+                                <div class="invest-block__payment-method-freq">
+                                    <form class="form__payment-method" action="" >
+                                        <div class="payment-method-options__inner">
+                                            <label class="payment-method-options" for="card">
+                                                <span class="sub-title--black text-400">Щомісячно</span>
+                                            </label>
+                                            <input type="radio" name="choice" value="Щомісячно" id="card">
+                                        </div>
+                                        <div class="payment-method-options__inner">
+                                            <label class="payment-method-options" for="card">
+                                                <span class="sub-title--black text-400">Одноразово</span>
+                                            </label>
+                                            <input type="radio" name="choice" value="Одноразово" id="card">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="invest-block__payment-sign-in">
+                                <div class="input-filed">
+                                    <form class="form" action="" method="">
+                                        <div class="form__inner">
+                                            <label class="form__title sub-title--black text-700 text-uppercase" for="name">ім’я</label>
+                                            <input class="form__input" type="text" name="name" id="name" placeholder="Напишіть ваше ім’я">
+                                            <img class="form__img" src="./images/form__img.png" alt="form__img">
+                                        </div>
+                                        <div class="form__inner">
+                                            <label class="form__title sub-title--black text-700 text-uppercase" for="mail">Email</label>
+                                            <input class="form__input" type="email" name="mail" id="mail" placeholder="Напишіть вашу електронну адресу">
+                                            <img class="form__img" src="./images/form__img.png" alt="form__img">
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="privacy-checkbox">
+                                    <form action="" method="">
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox" name="Договір оферти">
+                                            <span class="checkbox__checkmark"></span>
+                                            <span class="checkbox__text sub-title--black text-400">Я приймаю</span>
+                                            <span class="checkbox__text-subject sub-title--blue text-400">Договір оферти</span>
+                                        </label>
+                                    </form>
+                                    <form action="" method="">
+                                        <label class="checkbox">
+                                            <input class="checkbox__input" type="checkbox" name="Угоду про використання персональних даних">
+                                            <span class="checkbox__checkmark"></span>
+                                            <span class="checkbox__text sub-title--black text-400">Я приймаю</span>
+                                            <span class="checkbox__text-subject sub-title--blue text-400">Угоду про використання персональних даних</span>
+                                        </label>
+                                    </form>
+                                </div>
+                            </div>
+                            <button class="invest-block__submit-button button text-400 text-uppercase">відправити</button>
+                        </div>
                     </div>
-                </article>
+                </div>
+            </section>
         </div>
     </main>
 </body>

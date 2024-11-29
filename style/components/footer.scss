@@ -1,0 +1,222 @@
+.footer{
+    position: relative;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background: url(/DmytroPonomariov-course-project/images/footer__background-img.png) center center no-repeat;
+    background-size: cover;
+    padding-bottom: 70px;
+
+    &__arrow{
+        position: relative;
+        top: -41px;
+        left: 0;
+        z-index: 2;
+        margin: 0 auto 15px auto;
+        display: block;
+        width: 30px;
+        height: 56px;
+    }
+
+    &__arrow-img{
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__logo{
+        display: block;
+        width: 195px;
+        height: 48px;
+        margin: 0 auto 15px auto;
+    }
+
+    &__logo-image{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+
+    &__extra-info{
+        display: flex;
+        gap: 50px;
+        margin-right: 120px;
+    }
+
+    &__extra-info-list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__extra-info-list-title-red {
+        margin-top: 10px;
+    }
+
+    &__contact{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__contact-title{
+        text-decoration: underline;
+    }
+
+    &__contact-timetable{
+        display: flex;
+        gap: 20px;
+    }
+
+    &__social-media-title{
+        text-decoration: underline;
+    }
+
+    &__social-media{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__social-media-inner{
+        display: flex;
+        gap: 25.50px;
+        align-items: center;
+        margin-bottom: 66px;
+    }
+
+    &__facebook{
+        width: 16.50px;
+        height: 16.50px;
+        display: block;
+    }
+
+    &__facebook-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+
+    &__youtube{
+        width: 18.99px;
+        height: 13.27px;
+        display: block;
+    }
+
+    &__youtube-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    &__messanger{
+        width: 17.29px;
+        height: 14.14px;
+        display: block;
+    }
+
+    &__messanger-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    &__pinterest{
+        width: 17.28px;
+        height: 17.28px;
+        display: block;
+    }
+    
+    &__pinterest-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+
+    &__instagram{
+        width: 16.51px;
+        height: 16.51px;
+        display: block;
+    }
+
+    &__instagram-img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        display: block;
+    }
+
+    &__extra-info-and-contact-social-media{
+        max-width: 1150px;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+.green{
+    background-color: green;
+}
+
+.blue{
+    background-color: blue;
+}
+
+.red{
+    background-color: red;
+}
+
+
+@media (max-width: 1200px){
+    .footer{
+        &__extra-info{
+            margin-right: 18px;
+        }
+    }
+}
+
+@media (max-width: 768px){
+    .footer{
+        padding-bottom: 145px;
+
+        &__contact{
+            position: absolute;
+            z-index: 2;
+            bottom: 20px;
+            left: 10px;
+        }
+    }
+}
+
+@media (max-width: 560px){
+    .footer{
+        &__page{
+            display: none;
+        } 
+
+        &__button{
+            margin-inline: auto;
+        }
+
+        &__social-media-inner{
+            flex-wrap: wrap;
+        }
+
+        &__extra-info{
+            width: 400px;
+            gap: 36px;
+        }
+
+        &__social-media-text{
+            display: none;
+        }
+    }
+}

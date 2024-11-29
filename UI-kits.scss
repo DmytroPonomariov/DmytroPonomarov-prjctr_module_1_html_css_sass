@@ -1,0 +1,149 @@
+:root{
+    --color-black: #000000;
+    --color-dark-grey: #565656;
+    --color-grey: #B0B0B0;
+    --color-red: #DA1F39;
+    --font-Raleway: Raleway, Arial, sans-serif;
+    --font-DelaGothicOne: 'Dela Gothic One', Arial, sans-serif;
+}
+
+// --typography--
+
+.text{
+    color: var(--text-color);
+    font-family: var(--text-font-family);
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);  
+    font-weight: var(--text-font-weight);
+
+    &__color-red{
+        --text-color:var(--color-red)
+    }
+
+    &__color-black{
+        --text-color:var(--color-black)
+    }
+
+    &__color-dark-grey{
+        --text-color:var(--color-dark-grey)
+    }
+
+    &__color-grey{
+        --text-color:var(--color-grey)
+    }
+
+    &__line-height16{
+        --text-line-height: 16.44px;
+    }
+
+    &__line-height18{
+        --text-line-height: 18.78px;
+    }
+
+    &__line-height19{
+        --text-line-height: 19.97px;
+    }
+
+    &__line-height23{
+        --text-line-height: 23.27px;
+    }
+    
+    &__line-height51{
+        --text-line-height: 50.51px;
+    }
+
+    &__300{
+        --text-font-weight: 300;
+    }
+    
+    &__400{
+        --text-font-weight: 400;
+    }
+    
+    &__600{
+        --text-font-weight: 600;
+    }
+    
+    &__700{
+        --text-font-weight: 700;
+    }
+
+    &__rale12{
+        --text-font-family:var(--font-Raleway);
+        --text-font-size: 12px;
+    }
+
+    &__rale14{
+        --text-font-family:var(--font-Raleway);
+        --text-font-size: 14px;
+    }
+
+    &__rale16{
+        --text-font-family:var(--font-Raleway);
+        --text-font-size: 16px;
+    }
+
+    &__dela36{
+        --text-font-family:var(--font-DelaGothicOne);
+        --text-font-size: 36px;
+    }
+    }
+
+    @media (max-width: 560px){
+        .text{
+            &__dela36{
+                --text-font-family:var(--font-DelaGothicOne);
+                --text-font-size: 18px;
+            }
+
+            &__line-height51{
+                --text-line-height: 22.25px;
+            }
+        }
+    }
+
+    .text-font-variant-numeric{
+        font-variant-numeric:lining-nums;
+    }
+
+    .text-align-left{
+        text-align: left;
+    }
+
+    .text-align-center{
+        text-align: center;
+    }
+
+    .button{
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+
+
+// .(Головна) hover{
+//     //styleName: Raleway / 12 bold;
+// font-family: Raleway;
+// font-size: 12px;
+// font-weight: 600;
+// line-height: 19.97px;
+// text-align: left;
+// animation-timing-function: ease-in-out;
+// animation-duration: 200ms;
+
+// }
+
+
+// .(Каталог) hover{
+//     font-family: Raleway;
+// font-size: 16px;
+// font-weight: 700;
+// line-height: 18.78px;
+// text-align: left;
+// background: #DA1F39;
+// animation-timing-function: ease-in-out;
+// animation-duration: 300ms;
+// }
+

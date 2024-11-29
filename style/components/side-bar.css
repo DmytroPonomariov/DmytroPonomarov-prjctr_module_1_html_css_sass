@@ -1,0 +1,1 @@
+.side-bar{display:flex;margin-top:110px;gap:5px}.side-bar__link-and-separator{display:flex;align-items:center;gap:5px}@media(max-width: 1200px){.side-bar{display:none}}

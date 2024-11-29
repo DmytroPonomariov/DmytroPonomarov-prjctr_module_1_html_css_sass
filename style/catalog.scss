@@ -1,0 +1,12 @@
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+@import './components/container.scss';
+@import './components/header-top.scss';
+@import './components/side-bar.scss';
+@import './components/filter.scss';
+@import './components/catalog-block.scss';
+@import './components/footer.scss';

@@ -1,53 +1,79 @@
 <!DOCTYPE html>
-<html lang="ukr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>homework2</title>
+    <title>UNEAK</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sintony&family=Tomorrow&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>
-        On programming
-    </h1>
-    <p>
-        Besides explaining JavaScript, I will introduce the basic principles of programming. Programming, it turns out, is hard. The fundamental rules are simple and clear, but programs built on top of these rules tend to become complex enough to introduce their own rules and complexity. You’re building your own maze, in a way, and you might just get lost in it.
-    </p>
-    <p>
-        There will be times when reading this book feels terribly frustrating. If you are new to programming, there will be a lot of new material to digest. Much of this material will then be 
-        <em>
-            combined
-        </em>
-        in ways that require you to make additional connections.
-    </p>
-    <p>
-        It is up to you to make the necessary effort. When you are struggling to follow the book, do not jump to any conclusions about your own capabilities. You are fine—you just need to keep at it. Take a break, reread some material, and make sure you read and understand the example programs and exercises. Learning is hard work, but everything you learn is yours and will make subsequent learning easier. 
-    </p>
-    <blockquote class="blockquote_color">
-        "When action grows unprofitable, gather information; when information grows unprofitable, sleep."
-    </blockquote>
-    <!-- Нижче, я вагався що краще чи cite - для виділення заголовку автора, що і є заголовком і можливо праильно було б через cite. Але блокквок дає гарний відступ тому я використав його ще раз -->
-    <blockquote>
-        —Ursula K. Le Guin, 
-        <b>The Left Hand of Darkness</b>
-    </blockquote>
-    <p>
-        A program is many things. It is a piece of text typed by a programmer, it is the directing force that makes the computer do what it does, it is data in the computer’s memory, yet it controls the actions performed on this same memory. Analogies that try to compare programs to objects we are familiar with tend to fall short. A superficially fitting one is that of a machine—lots of separate parts tend to be involved, and to make the whole thing tick, we have to consider the ways in which these parts interconnect and contribute to the operation of the whole.
-    </p>
-    <p>
-        A computer is a physical machine that acts as a host for these immaterial machines. Computers themselves can do only stupidly straightforward things. The reason they are so useful is that they do these things at an incredibly high speed. A program can ingeniously combine an enormous number of these simple actions to do very complicated things.
-    </p>
-    <p>
-        A program is a building of thought. It is costless to build, it is weightless, and it grows easily under our typing hands.
-    </p>
-    <p>
-        But without care, a program’s size and complexity will grow out of control, confusing even the person who created it. Keeping programs under control is the main problem of programming. When a program works, it is beautiful. The art of programming is the skill of controlling complexity. The great program is subdued—made simple in its complexity.
-    </p>
-    <p>
-        Some programmers believe that this complexity is best managed by using only a small set of well-understood techniques in their programs. They have composed strict rules (“best practices”) prescribing the form programs should have and carefully stay within their safe little zone.
-    </p>
-    <p class="p_red">
-        This is not only boring, it is ineffective. New problems often require new solutions. The field of programming is young and still developing rapidly, and it is varied enough to have room for wildly different approaches. There are many terrible mistakes to make in program design, and you should go ahead and make them so that you understand them. A sense of what a good program looks like is developed in practice, not learned from a list of rules.
-    </p>
+    <header class="header">
+        <div class="container">
+            <div class="header__container">
+                <div class="header__top">
+                    <button class="header__burger">
+                        <span class="header__burger-menu primary-header__menu-link">MENU</span>
+                    </button>
+                    <a class="header__logo-link" href="#">
+                        <picture class="header__logo-image-wrapper">
+                            <source class="header__logo-image-slim" srcset="./images/header__logo-image-slim.svg" media="(max-width: 560px)">
+                            <img class="header__logo-image" src="./images/header__logo-image.png" alt="header__logo-image">
+                        </picture>
+                    </a>
+                    <nav class="header__menu">
+                        <ul class="header__menu-list">
+                            <li class="header__menu-item-search"><a class="header__menu-link-search" href="#"><img class="header__menu-link-search-image" src="./images/header__menu-link-search-image.png" alt="header__menu-link-search-image"></a></li>
+                            <li class="header__menu-item"><a class="header__menu-link primary-header__menu-link" href="#">ABOUT</a></li>
+                            <li class="header__menu-item"><a class="header__menu-link primary-header__menu-link" href="#">SHOP</a></li>
+                            <li class="header__menu-item"><a class="header__menu-link primary-header__menu-link" href="#">CART</a></li>
+                            <li class="header__menu-item-cart"><a class="header__menu-link-cart" href="#"><img class="header__menu-link-cart-image" src="./images/header__menu-link-cart-image.svg" alt="header__menu-link-cart-image"></a></li>
+                        </ul>
+                        <a class="header__menu-link-cart-mobile primary-header__menu-link" href="#">CART</a>
+                    </nav>
+                </div>
+            </div>
+        </div> 
+    </header>
+    <main class="main">
+            <div class="section-sneakers__presentation-background">
+                <div class="container">
+                    <section class="section-sneakers__presentation">
+                        <h1 class="section-sneakers__presentation-title">Sneakers which will change your next step making it more sustainable, animal friendly, conscious</h1>
+                        <img class="section-sneakers__presentation-image" src="./images/section-sneakers__image.png" alt="section-sneakers__image">
+                    </section>
+                    <section class="section-sneakers__presentation-mobile">
+                        <h1 class="section-sneakers__presentation-title-mobile">Sneakers which will change your next step<img class="section-sneakers__presentation-image-mobile" src="./images/section-sneakers__image.png" alt="section-sneakers__image"> making it more sustainable, animal friendly, conscious</h1>
+                    </section>
+                </div>
+            </div>
+            <div class="container">
+                    <article class="article-sneakers__description">
+                        <img class="article-sneakers__description-image" src="./images/article-sneakers__description-image.png" alt="article-sneakers__description-image">
+                        <h3 class="article-sneakers__description-text">We realize quite well that shoes  are one of the most consumed products  within the industry of fashion,  which means volumes can be important,  which is a big social responsibility.</h3>
+                    </article>
+            </div>
+            <div class="section-new-model__presentation-background">
+                <div class="container">
+                    <section class="section-new-model__presentation">
+                        <h1 class="section-new-model__presentation-title">Juarez is the name of the first sustainable sneaker shoes model from UNEAK,  a new italian sustainable fashion brand, born from  the ideas of Sonia and Davide.</h1>
+                    </section>
+                </div>
+            </div>
+            <div class="container">
+                <article class="article-new-model__description">
+                    <div class="article-new-model__description-image-wrapper">
+                        <img class="article-new-model__description-image" src="./images/article-new-model__description-image.png" alt="article-new-model__description-image">
+                    </div>
+                    <div class="article-new-model__description-text-wrapper">
+                        <h3 class="article-new-model__description-title">The Juarez sneaker model features certified sustainable materials  </h3>
+                        <p class="article-new-model__description-text">It’s produced completely in Italy,  in a warm region where all workers live very close to the production site.</p>
+                    </div>
+                </article>
+        </div>
+    </main>
 </body>
 </html>

@@ -1,12 +1,366 @@
-body {
-    max-width: 500px;
-    margin: auto;
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
 }
 
-.blockquote_color {
-    color: #383737;
+body{
+    font-family: "Tomorrow", Arial, sans-serif;
+    font-style: normal;
+    font-size: 56px;
+    font-weight: 400;
+    line-height: 78.4px;
+    letter-spacing: 0.04em;
+    text-align: left;
+    color: #000;
 }
 
-.p_red {
-    color: #ff0000;
+.primary-header__menu-link{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 26px;
+    color: #000;
+}
+
+.header{
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    width: 100%
+}
+
+.container{
+    max-width: 1290px;
+    padding-inline: 10px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__container{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 48px;
+    margin-bottom: 34px;
+}
+
+.header__burger{
+    display: none;
+}
+
+.header__logo-link {
+    display: block;
+    width: 238px;
+    height: 24px;
+}
+
+.header__logo-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.header__menu-list{
+    display: flex;
+}
+
+
+.header__menu-item-search{
+    margin-top: 1px;
+}
+
+.header__menu-link-search{
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.header__menu-link-search-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  
+}
+
+.header__menu-item{
+    margin-left: 20px;
+}
+
+.header__menu-link{
+    display: block;
+}
+
+.header__menu-item-cart{
+    margin-left: 10px;
+}
+
+.header__menu-link-cart{
+    width: 24px;
+    height: 24px;
+}
+
+.header__menu-link-cart-image{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;  
+}
+
+.header__menu-link-cart-mobile{
+    display: none;
+}
+
+.section-sneakers__presentation-background{
+    background: url(./images/section-sneakers__presentation-background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;.
+}
+
+.section-sneakers__presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 148px; */
+}
+
+.section-sneakers__presentation-title{
+    text-transform: uppercase;
+}
+
+.section-sneaker__presentation-image{
+    width: 100%;
+    aspect-ratio: 533 / 355;
+}
+
+.article-sneakers__description{
+    margin-top: 158px;
+    margin-bottom: 164px;
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.article-sneakers__description-image{
+    width: 100%;
+    aspect-ratio: 288 / 288;
+}
+
+.article-sneakers__description-text{
+    font-family: Sintony;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    text-align: left;
+}
+
+.section-new-model__presentation-background{
+    background: url(./images/section-new-model__presentation-background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 214px;
+    padding-bottom: 197px;
+}
+
+.section-new-model__presentation{
+    display: flex;
+    justify-content: center
+}
+
+.section-new-model__presentation-title{
+    text-transform: uppercase;
+}
+
+.article-new-model__description{
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    margin-top: 122px;
+    margin-bottom: 125px; 
+}
+
+
+.article-new-model__description-image{
+    aspect-ratio: 606 / 608;
+    width: 100%;
+}
+
+.article-new-model__description-text-wrapper{
+    max-width: 530px;
+}
+
+.article-new-model__description-title{
+    font-family: Sintony;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 56px;
+    padding-bottom: 64px;
+}
+
+.article-new-model__description-text{
+    font-family: Sintony;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 38.4px;
+}
+
+.section-sneakers__presentation-mobile{
+    padding-top: 113px;
+    padding-bottom: 52px;
+    display: none;
+}
+
+.section-sneakers__presentation-title-mobile{
+    text-transform: uppercase;
+}
+
+.section-sneakers__presentation-image-mobile{
+    width: 100%;
+    aspect-ratio: 280 / 186;
+}
+
+@media (max-width: 1200px){
+    .header__burger{
+        display: block;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+    }
+
+    .header__menu-link-cart-mobile{
+        display: block;
+    }
+
+    .header__menu-list{
+        display: none;
+    }
+
+    .container{
+        max-width: calc(100vw - 20px * 2);
+        padding: 0;
+    }
+
+    body{
+        font-size: 46px;
+        line-height: 60.4px;
+    }
+
+    .article-sneakers__description{
+        margin-top: 70px;
+        margin-bottom: 70px;
+        display: block;
+    }
+
+    .section-new-model__presentation-background{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    .article-new-model__description{
+        display: block;
+        margin-top: 70px;
+        margin-bottom: 70px;
+    }
+
+    .article-new-model__description-text-wrapper{
+        max-width: 1200px;
+    }
+
+    .article-new-model__description-title{
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .article-new-model__description-text{
+        font-size: 24px;
+        line-height: 33.6px;
+    }
+}
+
+
+@media (max-width: 560px){
+    .header__logo-link {
+        width: 140px;
+        height: 14px;  
+    }
+
+    .header__top{
+        gap: 22px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .primary-header__menu-link{
+        font-size: 16px;
+        line-height: 20.8px;
+    }
+
+    .header__logo-link{
+        margin-top: 3px;
+        margin-bottom: 3px;
+    }
+
+    body{
+        font-size: 26px;
+        line-height: 36.4px;
+    }
+
+    .section-sneakers__presentation{
+        padding-top: 113px;
+        padding-bottom: 52px;
+    }
+
+    .section-sneakers__presentation{
+        display: none;
+    }
+
+    .section-sneakers__presentation-mobile{
+        display: block;
+    }
+
+    .article-sneakers__description{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: block;
+    }
+
+    .article-sneakers__description-text{
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .section-new-model__presentation-background{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .article-new-model__description{
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .article-new-model__description-title{
+        font-size: 24px;
+        font-weight: 700;
+        line-height: 33.6px;
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    .article-new-model__description-text{
+        font-size: 20px;
+        line-height: 32px;
+    }
 }
